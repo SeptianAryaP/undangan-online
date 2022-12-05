@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@200;300;500&display=swap');
+
+
+/* font-family: 'Inria Serif',serif;
+font-family: 'Inter',sans-serif; */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+    font-family: 'Inter',sans-serif ;   
+    /* height:3000px ; */
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+p{
+    line-height: 2;
+    font-family: 'Inter',sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3{
+    font-family:'Inria Serif',serif;
+    font-weight: 500;
+} 
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    background-color:rgba(255, 255, 255, 0.447);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar_wrapper{
+    width: inherit;
+    height: inherit;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.brand {
+    font-size:32px;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_menu{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.container {
+    min-height: 300vh;
+}
+
+.hero{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: bottom;
+    transition-duration: 5s;
+}   
+.hero:hover{
+    background-position: top;
+
+}
+.hero p{
+    font-size:32px;
+    margin:0;
+}
+.hero h1{
+font-size: 96px;
+margin: 0;
+}
+
+
+.section {
+    width: 100vw;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_title {
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.section_wrapper{
+    width:inherit;
+    max-width:1080px;
+    display: flex;    
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.section_content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.section_content h2{
+    font-size: 32px;
+    margin:0;
+}
+
+.section_content p{
+    font-size: 18px;
+}
+
+.section_image{
+    flex: 1;
+    background-image: url("https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: top;
+    transition-duration: 3s;
+}
+
+.section_image:hover {
+background-position: bottom;
+}
+
+#resepsi .section_image{
+    background-image: url("https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600");
+}
+
+.form_wrapper{
+    width: inherit;
+    height: 500px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/818649/pexels-photo-818649.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size:cover;
+    background-position: bottom;
+}
+.form_buku_tamu{
+    width: 700px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.562);
+    padding:50px 70px;
+    gap: 25px;
+    justify-content: center;
+}
+.form_group{
+    /* width: inherit; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form_group label{
+    font-size: 18px;
+    font-family: 'Inter',sans-serif;
+    font-weight:300;
+    flex: 1;
+}
+
+.form_group input{
+    flex: 1;
+    width: 350px;
+    height: 45px;
+    padding: 0 8px;
+    font-size: inherit;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.form_buku_tamu button{
+    height: 45px;
+    background-color: black;
+    outline:none;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn_map {
+    height: 45px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 300px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    gap: 8px;
+
+}
+
+.btn_map:hover{
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.719);
+}
+
+.gallery_list{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px;
+
+}
+
+.gallery_list img{
+    width: 100%;
+    object-fit: cover;
+}
+
+footer{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}
+
+footer h2, footer p{
+    margin: 0;
+}
